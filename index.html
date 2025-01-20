@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My After Effect</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+        .video-container {
+            flex: 1;
+            min-width: 300px; /* 最小寬度 */
+            margin-right: 20px; /* 右邊距 */
+        }
+        .description {
+            flex: 1;
+            min-width: 300px; /* 最小寬度 */
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* 在小螢幕上改為垂直排列 */
+            }
+            .video-container, .description {
+                margin-right: 0; /* 移除右邊距 */
+                margin-bottom: 20px; /* 增加底部距 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>AI Technology</h1>
+
+    <div class="container">
+        <div class="video-container">
+            <video controls>
+                <source src="剪映_下雨+眨眼.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="description">
+            <h2>影片說明 1</h2>
+            <p>這是一段有關 AI 技術的介紹影片。</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="video-container">
+            <video controls>
+                <source src="剪映_下雨+眨眼.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="description">
+            <h2>影片說明 2</h2>
+            <p>這是一段有關 AI 技術的介紹影片。</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="video-container">
+            <video controls>
+                <source src="紀錄美好生活_花卉.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="description">
+            <h2>影片說明 3</h2>
+            <p>這是一段有關花卉的紀錄影片。</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="video-container">
+            <video controls>
+                <source src="剪映_下雨+眨眼.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="description">
+            <h2>影片說明 4</h2>
+            <p>這是一段有關 AI 技術的介紹影片。</p>
+        </div>
+    </div>
+</body>
+</html>
